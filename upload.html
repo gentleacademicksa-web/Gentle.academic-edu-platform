@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>رفع الواجبات | Gentle Academic</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+
+<h1>📤 Gentle Academic</h1>
+
+<p>رفع الواجبات والملفات</p>
+
+</div>
+
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">الرئيسية</a></li>
+
+<li><a href="student.html">بوابة الطالب</a></li>
+
+<li><a href="courses.html">الدورات</a></li>
+
+<li><a href="login.html">تسجيل الخروج</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<h2>
+إرسال الواجب
+</h2>
+
+<p>
+ارفع ملف الواجب وسيتم مراجعته من قبل المعلم.
+</p>
+
+</section>
+
+
+
+<section>
+
+<h2>
+نموذج رفع الواجب
+</h2>
+
+
+<form onsubmit="sendHomework(event)">
+
+
+<input 
+type="text"
+id="studentName"
+placeholder="اسم الطالب"
+required>
+
+
+<input 
+type="text"
+id="subject"
+placeholder="اسم الدورة أو المادة"
+required>
+
+
+<textarea
+id="message"
+placeholder="ملاحظات أو وصف الواجب">
+</textarea>
+
+
+<label>
+
+📎 اختر الملف:
+
+</label>
+
+
+<input 
+type="file"
+accept=".pdf,.doc,.docx,.jpg,.png">
+
+
+<button type="submit">
+
+إرسال الواجب
+
+</button>
+
+
+</form>
+
+
+</section>
+
+
+
+<section>
+
+<h2>
+طرق التواصل مع المعلم
+</h2>
+
+
+<div class="contact">
+
+
+<a href="javascript:openWhatsApp()">
+
+واتساب
+
+</a>
+
+
+<a href="javascript:openTelegram()">
+
+تليجرام
+
+</a>
+
+
+<a href="javascript:sendEmail()">
+
+البريد الإلكتروني
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 Gentle Academic
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
