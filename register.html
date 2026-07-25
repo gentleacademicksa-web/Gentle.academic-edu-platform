@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>إنشاء حساب طالب | Gentle Academic</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h1>🎓 Gentle Academic</h1>
+
+<p>إنشاء حساب طالب جديد</p>
+
+</div>
+
+</header>
+
+
+<section>
+
+<h2>تسجيل طالب جديد</h2>
+
+
+<form onsubmit="registerStudent(event)">
+
+
+<input 
+id="studentFullName"
+type="text"
+placeholder="الاسم الكامل"
+required>
+
+
+<input 
+id="studentEmail"
+type="email"
+placeholder="البريد الإلكتروني"
+required>
+
+
+<input 
+id="studentPhone"
+type="text"
+placeholder="رقم الهاتف"
+required>
+
+
+<select id="course" required>
+
+<option value="">
+اختر الدورة
+</option>
+
+<option>
+إدارة الأعمال
+</option>
+
+<option>
+إدارة الموارد البشرية
+</option>
+
+<option>
+الإدارة المكتبية
+</option>
+
+<option>
+أمن المعلومات
+</option>
+
+<option>
+إدارة الجودة
+</option>
+
+<option>
+إدارة المشاريع
+</option>
+
+<option>
+الإدارة المالية
+</option>
+
+<option>
+التسويق وإدارة المبيعات
+</option>
+
+</select>
+
+
+<input
+id="studentPassword"
+type="password"
+placeholder="كلمة المرور"
+required>
+
+
+<button class="btn" type="submit">
+
+إنشاء الحساب
+
+</button>
+
+
+</form>
+
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Gentle Academic
+</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
