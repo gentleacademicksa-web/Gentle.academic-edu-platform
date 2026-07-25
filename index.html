@@ -3,37 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gentle Academic | المنصة التعليمية</title>
+<title>Gentle Academic Platform</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>Gentle Academic</h1>
-<p>منصة تعليمية للتواصل والتعلم وإرسال الواجبات</p>
+<header class="top">
+<div class="brand">🎓 Gentle Academic</div>
+<p>منصة تعليمية متكاملة للطلاب والمعلمين</p>
 </header>
+
 <nav>
+<a href="#student">الطالب</a>
 <a href="#courses">الدورات</a>
-<a href="#contact">تواصل معنا</a>
-<a href="#send">إرسال واجب</a>
+<a href="#homework">الواجبات</a>
+<a href="#contact">التواصل</a>
 </nav>
+
 <section class="hero">
-<h2>مرحبا بك في منصتك التعليمية</h2>
-<p>تعلم، تابع دروسك، وأرسل واجباتك بسهولة.</p>
-<button onclick="contact()">ابدأ التواصل</button>
+<h1>تعلم بسهولة وطور مهاراتك</h1>
+<p>تابع الدروس، أرسل الواجبات، وتواصل مباشرة مع المعلم.</p>
+<div>
+<a class="btn" href="#contact">ابدأ الآن</a>
+</div>
 </section>
-<section id="courses" class="cards">
-<div><h3>الدورات</h3><p>دروس ومواد تعليمية منظمة.</p></div>
-<div><h3>متابعة الطلاب</h3><p>تواصل مباشر مع المعلم.</p></div>
-<div><h3>إرسال الواجبات</h3><p>رفع الملفات ومشاركة الحلول.</p></div>
+
+<section id="student" class="panel">
+<h2>بوابة الطالب</h2>
+<div class="cards">
+<div>👤 تسجيل دخول الطالب</div>
+<div>📚 متابعة الدروس</div>
+<div>📂 ملفات تعليمية</div>
+</div>
 </section>
-<section id="send">
-<h2>إرسال الواجب</h2>
-<p>يمكنك إرسال الواجب عبر واتساب أو تليجرام أو البريد الإلكتروني.</p>
+
+<section id="courses" class="panel">
+<h2>الدورات التعليمية</h2>
+<div class="cards">
+<div><h3>دورات أكاديمية</h3><p>مواد منظمة حسب المستوى.</p></div>
+<div><h3>شرح مباشر</h3><p>تواصل مع المعلم.</p></div>
+<div><h3>اختبارات</h3><p>قياس تقدم الطالب.</p></div>
+</div>
 </section>
-<section id="contact">
-<h2>تواصل معنا</h2>
-<a href="#">واتساب</a> | <a href="#">تليجرام</a> | <a href="#">البريد الإلكتروني</a>
+
+<section id="homework" class="panel">
+<h2>إرسال الواجبات</h2>
+<p>ارفع ملفاتك أو أرسلها عبر قنوات التواصل المتاحة.</p>
+<button class="btn">رفع الواجب قريباً</button>
 </section>
+
+<section id="contact" class="panel">
+<h2>تواصل مع المعلم</h2>
+<a class="contact" href="#">واتساب</a>
+<a class="contact" href="#">تليجرام</a>
+<a class="contact" href="#">البريد الإلكتروني</a>
+</section>
+
+<footer>© Gentle Academic Educational Platform</footer>
 <script src="script.js"></script>
 </body>
 </html>
