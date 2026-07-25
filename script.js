@@ -54,3 +54,25 @@ function searchCourses() {
         }
     });
 }
+// تسجيل الدخول
+function login(event){
+
+    event.preventDefault();
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+
+    if(email && password){
+
+        alert("تم تسجيل الدخول بنجاح");
+
+        window.location.href = "dashboard.html";
+
+    }else{
+
+        alert("يرجى إدخال البريد وكلمة المرور");
+
+    }
+
+}
