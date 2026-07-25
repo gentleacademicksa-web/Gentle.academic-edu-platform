@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gentle Academic Platform</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gentle Academic منصة تعليمية للتواصل بين الطلاب والمعلمين وإرسال الواجبات">
+    <title>Gentle Academic | المنصة التعليمية</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top"><div class="brand">🎓 Gentle Academic</div><p>منصة تعليمية متكاملة للطلاب والمعلمين</p></header>
-<nav><a href="#student">الطالب</a><a href="#courses">الدورات</a><a href="#homework">الواجبات</a><a href="#contact">التواصل</a></nav>
-<section class="hero"><h1>تعلم بسهولة وطور مهاراتك</h1><p>تابع الدروس وأرسل واجباتك وتواصل مباشرة مع المعلم.</p><a class="btn" href="#student">ابدأ الآن</a></section>
-<section id="student" class="panel"><h2>بوابة الطالب</h2><div class="cards"><div>👤 تسجيل الطلاب</div><div>📚 متابعة الدروس</div><div>📂 رفع الملفات</div></div></section>
-<section id="courses" class="panel"><h2>الدورات التعليمية</h2><div class="cards"><div>دورات أكاديمية منظمة</div><div>شرح مباشر</div><div>اختبارات وتقييم</div></div></section>
-<section id="homework" class="panel"><h2>إرسال الواجبات</h2><form class="homework-form" onsubmit="sendHomework(event)"><input id="studentName" placeholder="اسم الطالب" required><input id="subject" placeholder="المادة الدراسية" required><textarea id="message" placeholder="تفاصيل الواجب"></textarea><button class="btn">إرسال</button></form><p>سيتم تحويل الطالب لقنوات التواصل المباشر لاستكمال الإرسال.</p></section>
-<section id="contact" class="panel"><h2>تواصل مع المعلم</h2><a class="contact" href="https://wa.me/966533739123">واتساب</a><a class="contact" href="https://t.me/Saudi_GnlSrvs">تليجرام</a><a class="contact" href="mailto:gentle.academic.ksa@gmail.com">البريد الإلكتروني</a></section>
-<footer>© Gentle Academic Educational Platform</footer>
+
+<header class="top">
+    <div class="brand">🎓 Gentle Academic</div>
+    <p>منصة تعليمية متكاملة للطلاب والمعلمين</p>
+</header>
+
+<nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#student">بوابة الطالب</a>
+    <a href="#courses">الدورات</a>
+    <a href="#homework">الواجبات</a>
+    <a href="#contact">تواصل معنا</a>
+</nav>
+
+<section id="home" class="hero">
+    <h1>تعلم بسهولة وطور مهاراتك</h1>
+    <p>تابع الدروس، أرسل الواجبات، وتواصل مباشرة مع المعلم عبر قنوات التواصل المختلفة.</p>
+    <a class="btn" href="#student">ابدأ التعلم الآن</a>
+</section>
+
+<section id="student" class="panel">
+    <h2>👨‍🎓 بوابة الطالب</h2>
+    <div class="cards">
+        <div>👤 تسجيل الطلاب</div>
+        <div>📚 متابعة الدروس</div>
+        <div>📂 إرسال الملفات والواجبات</div>
+    </div>
+</section>
+
+<section id="courses" class="panel">
+    <h2>📖 الدورات التعليمية</h2>
+    <div class="cards">
+        <div>دورات أكاديمية منظمة</div>
+        <div>شرح مباشر وتفاعلي</div>
+        <div>اختبارات وتقييم مستوى الطالب</div>
+    </div>
+</section>
+
+<section id="homework" class="panel">
+    <h2>📂 إرسال الواجبات</h2>
+    <form class="homework-form" onsubmit="sendHomework(event)">
+        <input id="studentName" type="text" placeholder="اسم الطالب" required>
+        <input id="subject" type="text" placeholder="المادة الدراسية" required>
+        <textarea id="message" placeholder="تفاصيل الواجب"></textarea>
+        <button class="btn" type="submit">إرسال الواجب</button>
+    </form>
+</section>
+
+<section id="contact" class="panel">
+    <h2>📞 تواصل مع المعلم</h2>
+    <div class="contact-links">
+        <a class="contact" href="https://wa.me/966533739123">واتساب</a>
+        <a class="contact" href="https://t.me/Saudi_GnlSrvs">تليجرام</a>
+        <a class="contact" href="mailto:gentle.academic.ksa@gmail.com">البريد الإلكتروني</a>
+    </div>
+</section>
+
+<footer>
+    © Gentle Academic Educational Platform
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
