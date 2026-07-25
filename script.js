@@ -76,3 +76,5 @@ function login(event){
     }
 
 }
+
+// إنشاء حساب طالب function registerStudent(event){ event.preventDefault(); let name = document.getElementById("studentFullName").value; let email = document.getElementById("studentEmail").value; let course = document.getElementById("course").value; alert( "تم إنشاء حساب الطالب: " + name + "\nالدورة: " + course ); window.location.href = "login.html"; }
