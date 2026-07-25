@@ -78,3 +78,46 @@ function login(event){
 }
 
 // إنشاء حساب طالب function registerStudent(event){ event.preventDefault(); let name = document.getElementById("studentFullName").value; let email = document.getElementById("studentEmail").value; let course = document.getElementById("course").value; alert( "تم إنشاء حساب الطالب: " + name + "\nالدورة: " + course ); window.location.href = "login.html"; }
+// فتح واتساب
+function openWhatsApp() {
+    window.open(
+        "https://wa.me/966533739123",
+        "_blank"
+    );
+}
+
+
+// فتح تليجرام
+function openTelegram() {
+    window.open(
+        "https://t.me/Saudi_GnlSrvs",
+        "_blank"
+    );
+}
+
+
+// إرسال بريد إلكتروني
+function sendEmail() {
+    window.location.href =
+        "mailto:gentle.academic.ksa@gmail.com";
+}
+
+
+// إرسال الواجب
+function sendHomework(event){
+
+    event.preventDefault();
+
+    let student =
+        document.getElementById("studentName").value;
+
+    let subject =
+        document.getElementById("subject").value;
+
+    alert(
+        "تم استلام الواجب بنجاح\n\n" +
+        "الطالب: " + student +
+        "\nالمادة: " + subject
+    );
+
+}
