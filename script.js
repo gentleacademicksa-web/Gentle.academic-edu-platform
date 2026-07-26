@@ -121,3 +121,52 @@ function sendHomework(event){
     );
 
 }
+async function registerStudent(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("studentFullName").value;
+    const email = document.getElementById("studentEmail").value;
+    const phone = document.getElementById("studentPhone").value;
+    const course = document.getElementById("course").value;
+    const password = document.getElementById("studentPassword").value;
+
+
+    // إنشاء حساب في Auth
+    const { data, error } = await supabase.auth.signUp({
+        email: email,
+        password: password
+    });
+
+
+    if (error) {
+        alert(error.message);
+        return;
+    }
+
+
+    // حفظ بيانات الطالب في جدول students
+    const { error: studentError } = await supabase
+        .from("students")
+        .insert([
+            {
+                user_id: data.user.id,
+                name: name,
+                email: email,
+                phone: phone,
+                course: course
+            }
+        ]);
+
+
+    if (studentError) {
+        alert(studentError.message);
+        return;
+    }
+
+
+    alert("تم إنشاء الحساب بنجاح");
+
+    window.location.href = "login.html";
+
+}
